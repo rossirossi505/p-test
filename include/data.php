@@ -17,7 +17,7 @@ $query_builder = TRUE;
 $connection = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
 
-echo "thiss is data" ;
+echo "thiss is data      !" ;
 
 
 

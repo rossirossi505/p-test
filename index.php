@@ -7,7 +7,7 @@
     <title>test</title>
 </head>
 <body>
-<?php require_once("data.php") ;
+<?php include("include/data.php") ;
 
 $x=1 ;
 //b07d371aff8fc1:a7e356b6@us-cdbr-east-03.cleardb.com/heroku_31be45636b10be3?reconnect=true
