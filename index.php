@@ -7,26 +7,17 @@
     <title>test</title>
 </head>
 <body>
-<?php
+<?php require_once("data.php") ;
 
 $x=1 ;
 //b07d371aff8fc1:a7e356b6@us-cdbr-east-03.cleardb.com/heroku_31be45636b10be3?reconnect=true
 
 
-//Get Heroku ClearDB connection information
-$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$cleardb_server = $cleardb_url["host"];
-$cleardb_username = $cleardb_url["user"];
-$cleardb_password = $cleardb_url["pass"];
-$cleardb_db = substr($cleardb_url["path"],1);
-$active_group = 'default';
-$query_builder = TRUE;
-// Connect to DB
-$connection = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-
 
 if($connection){
- echo "we are connected" ;
+ echo "we are connected afterwards" ;
+}else{
+    echo "we arent connected" ;
 }
 
 
